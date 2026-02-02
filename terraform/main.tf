@@ -14,7 +14,7 @@ provider "aws" {
 # --- INI KODE BARU YANG DITAMBAHKAN ---
 resource "aws_instance" "app_server" {
   ami           = "ami-0b93ce03dcbcb99ea" # ID mesin Ubuntu
-  instance_type = "t2.micro"              # Ukuran mesin (Kecil)
+  instance_type = "c5.4xlarge"            # lebih besar
 
   tags = {
     Name = "Paradex-Node"
